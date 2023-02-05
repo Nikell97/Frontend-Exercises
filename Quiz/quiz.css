@@ -1,0 +1,75 @@
+html {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    border: 1rem dotted black;
+}
+
+p {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+section {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border: 0;
+}
+
+section + section {
+    margin-top: 2rem;
+}
+
+h2 {
+    display: block;
+    flex: 1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ol {
+    display: grid;
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding-left: 0;
+}
+
+li {
+    display: block;
+    margin: 0.5em;
+    font-weight: bold;
+    color: white;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: hsl(0, 0%, 25%);
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: blue;
+}
+
+button {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.25em;
+}
