@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiceWeather</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>NiceWeather</h1>
+    <form>
+        <input type="text" value="Gothenburg" name="city" placeholder="Enter city name" required>
+        <input type="number" value="57.6937" name="latitude" placeholder="Latitude" required step="0.0001">
+        <input type="number" value="11.9732" name="longitude" placeholder="Longitude" required step="0.0001">
+        <button type="submit">Submit</button>
+    </form>
+    <ul id="cities"></ul>
+</body>
+</html>
