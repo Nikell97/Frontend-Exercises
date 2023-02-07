@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>BMI</h1>
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <th><label for="weight">Weight (kg):</label></th>
+            <td><input type="number" name="weight" id="weight" min="1" max="1000" step="1" autofocus></td>
+          </tr>
+          <tr>
+            <th><label for="height">Height (m):</label></th>
+            <td><input type="number" name="height" id="height" min="0.5" max="3" step="0.01"></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><button type="submit">Calculate BMI</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <ul id="results"></ul>
+  </body>
+</html>

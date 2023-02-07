@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Flickr Search</title>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <h1>Search Flickr</h1>
+        <form method="get" action="https://www.flickr.com/search/">
+            <input type="search" name="text" placeholder="Type a search term...">
+            <fieldset>
+                <legend>Orientation</legend>
+                <select name="orientation">
+                    <option>landscape</option>
+                    <option>portrait</option>
+                    <option>square</option>
+                    <option>panorama</option>
+                </select>
+            </fieldset>
+            <fieldset id="colors">
+                <legend>Color</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" value="0" id="red">
+                        <label for="red">Red</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="6" id="green">
+                        <label for="green">Green</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="8" id="blue">
+                        <label for="blue">Blue</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Size</legend>
+                <label for="width">Width</label>
+                <input type="number" name="width" min="100" step="50" id="width">
+                <label for="height">Height</label>
+                <input type="number" name="height" min="100" step="50" id="height">
+            </fieldset>
+            <fieldset>
+                <legend>Dates</legend>
+                <label for="from-date">From</label>
+                <input type="date" name="min_taken_date">
+                <label for="to-date">To</label>
+                <input type="date" name="max_taken_date">
+            </fieldset>
+            <button type="submit">Search Flickr</button>
+        </form>
+    </body>
+</html>
